@@ -1,0 +1,85 @@
+
+.banner-video{
+    z-index: -1;
+}
+
+.banner-video:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+.banner-text{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    width:75%;
+    margin: 0 auto;
+}
+
+.banner-text h5{
+    line-height: 30px;
+}
+
+.bg-paperWork{
+    background-image: url('../../../assets/images/paper-work-bg.jpg');
+    background-size: cover;
+}
+
+.engre-points{
+    background-image: url('../../../assets/images/engre-points-bg.jpg');
+    background-size: cover;
+}
+
+.service_blocks .service_block{
+    border: 2px solid #d4f5f8;
+    border-radius: 15px;
+}    
+.service_blocks .service_block:hover{
+    background-color: #41b4b9 !important;
+    box-shadow: 8px 8px 0px #b6dfe1 !important;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+    color: #fff;
+}
+
+.service_blocks .service_block .h5{
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.service_block .bi{
+    left: -15px;
+    background: #006569;
+    color: #fff;
+    padding: 9px 11px;
+    top: -23px;
+    border-radius: 25px;
+    box-shadow: 4px 3px 0px #fff;
+}
+
+@media screen and (max-width: 762px){
+    .banner-text{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 320px;
+    }
+
+    .banner-text .display-4{
+        font-size: 14px;
+        width:75%;
+    }
+
+    .banner-text h5{
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+}

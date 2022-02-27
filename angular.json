@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "engretech-V1": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "engretech-V1"
+    }
+  },
+  "defaultProject": "engretech-V1",
+  "cli": {
+    "analytics": "8585a046-7010-4b69-8382-e9dcb8b02a4e"
+  }
 }

@@ -1,0 +1,123 @@
+
+
+.header-bg{
+    background-color: rgb(255 255 255 / 80%);
+    box-shadow: 0 8px 20px #252626;
+    z-index: 1;
+}
+
+/* .header-bg .engretech-logo{
+    width:200px;
+    height:58px;
+} */
+
+.enegre-menu #sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 23px;
+    transform: translateX(-250px);
+    transition: transform 510ms ease-in-out;
+    background: #007175;
+}
+.enegre-menu .sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.enegre-menu .sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.enegre-menu .sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.enegre-menu .sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.enegre-menu input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+.enegre-menu input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.enegre-menu .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 20px;
+    width: 29px;
+}
+.enegre-menu .spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #007175;
+}
+.enegre-menu .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+}
+.enegre-menu .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.enegre-menu .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+}
+.enegre-menu input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.enegre-menu input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+.enegre-menu input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+.enegre-menu #sidebarMenu .sidebarMenuInner li{
+    background-color: #007175;
+}
+
+.enegre-menu #sidebarMenu .sidebarMenuInner li:hover{
+    background: #0c8c91;
+    transition: 0.4s ease-in-out;
+    padding-left:25px;
+}
+
+
+
