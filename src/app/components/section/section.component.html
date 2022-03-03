@@ -1,17 +1,20 @@
 
+
+
+
+
 <div class="banner-section">
     <div class="banner-video position-absolute top-0">
-        <video width="100%" autoplay loop muted class="mt-5 mt-md-0 pt-3 pt-md-0">
+        <video width="100%" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="mt-5 mt-md-0 pt-3 pt-md-0">
             <source src="../../../assets/videos/banner-video.mp4" type="video/mp4">
         </video>
     </div>
         
     
     <div class="banner-text">
-        <h1 class="text-white col-lg-8 text-center font-oswald display-4">{{banner_heading}}</h1>
-        <h5 class="fw-lighter text-white text-center w-75 mt-0 mt-sm-3 mb-0 mb-md-4">Engre Technologies Pvt. Ltd. is team of experienced, dedicated and resourceful Engineers who are engaged in providing high quality and cost-effective mechanical engineering services to its clients in USA and EUROPE since April 2019.</h5>
-        <a href="" class="btn btn-md px-4 rounded-pill btn-light">Learn More <i class="bi bi-caret-right-fill ms-1"></i></a>
-    </div>
+        <h1 class="text-white col-lg-8 text-center font-oswald display-3 mb-5">{{banner_heading}}</h1>
+        <a href="#" class="btn btn-md px-4 rounded-pill btn-light">Learn More <i class="bi bi-caret-right-fill ms-1"></i></a>
+    </div> 
 
 </div> 
 
@@ -76,7 +79,7 @@
 
 
 <div class="row m-0 py-0">
-    <div class="col-lg-6 px-0">
+    <div class="col-lg-6 px-0 paper-work">
         <img src="../../../assets/images/paper-work-img.jpg" alt="" class="img-fluid">
     </div>
     <div class="col-lg-6 bg-paperWork d-flex justify-content-center align-items-center flex-column h-100vh p-5">

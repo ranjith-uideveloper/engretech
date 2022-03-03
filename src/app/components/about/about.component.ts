@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  about_bannerText:string = "Cost-Effective Solutions will help you save on your product development and manufacturing costs.";
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,34 +1,17 @@
 
-.banner-video{
-    z-index: -1;
-}
 
-.banner-video:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6); 
-}
-
-.banner-text{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 560px;
-    width:75%;
-    margin: 0 auto;
-}
-
-.banner-text h5{
-    line-height: 30px;
-}
 
 .bg-paperWork{
     background-image: url('../../../assets/images/paper-work-bg.jpg');
     background-size: cover;
 }
+
+/* .paper-work img:before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+} */
 
 .engre-points{
     background-image: url('../../../assets/images/engre-points-bg.jpg');
@@ -63,23 +46,4 @@
     box-shadow: 4px 3px 0px #fff;
 }
 
-@media screen and (max-width: 762px){
-    .banner-text{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: 320px;
-    }
 
-    .banner-text .display-4{
-        font-size: 14px;
-        width:75%;
-    }
-
-    .banner-text h5{
-        font-size: 10px;
-        line-height: 18px;
-    }
-
-}

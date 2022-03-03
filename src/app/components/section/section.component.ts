@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
 
-  banner_heading: string = "Providing high end Engineering services for your Products.";
+  banner_heading: string = "Providing High End Engineering Services for Your Products.";
 
   constructor() { }
 

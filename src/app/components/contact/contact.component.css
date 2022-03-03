@@ -1,0 +1,11 @@
+
+
+.contact-bg{
+    background-image: url('../../../assets/images/contact-bg.jpg');
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.contact-bg:before{
+    
+}
