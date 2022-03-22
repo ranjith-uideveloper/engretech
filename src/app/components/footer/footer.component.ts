@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  companyList: string []=["about us", "careers", "contact us"];
+  //companyList: string []=["about us", "careers", "contact us"];
 
   
 

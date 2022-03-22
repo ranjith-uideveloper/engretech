@@ -11,7 +11,7 @@
     height:58px;
 } */
 
-.enegre-menu #sidebarMenu {
+/* .enegre-menu #sidebarMenu {
     height: 100%;
     position: fixed;
     left: 0;
@@ -117,7 +117,104 @@
     background: #0c8c91;
     transition: 0.4s ease-in-out;
     padding-left:25px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+#toggle{
+    position: relative;
+    /* top: 15px; */
+    left: 310px;
+    width: 55px;
+    height: 45px;
+    background: transparent;
+    cursor: pointer;
 }
+
+#toggle::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #017f85;
+    transform: translateY(-5px);
+    transition:0.2s;
+    top: 22px;
+    left: 11px;
+    border-radius: 20px;
+}
+
+#toggle::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #017f85;
+    transform: translateY(5px);
+    transition:0.2s;
+    top: 22px;
+    left: 11px;
+    border-radius: 20px;
+}
+
+#toggle.active::before{
+    transform: translateY(0px) rotate(45deg);
+    left:0;
+}
+
+#toggle.active::after{
+    transform: translateY(0px) rotate(-45deg);
+    left:0;
+}
+
+#sidebar{
+    position: fixed;
+    top:0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #017f85;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+#sidebar.active{
+    left:0px;
+}
+
+#sidebar ul{
+    position: relative;
+}
+
+#sidebar ul li{
+    display: inline-block;
+    width: 100%;
+    padding:10px 40px;
+}
+
+#sidebar ul li:hover{
+    background-color: #076d72;
+    cursor: pointer;
+}
+
+#sidebar ul li a{
+    color: #fff;
+
+}
+
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 
 <div class="row container-fluid header-bg pt-2 m-0 position-fixed">
-    <div class="col-lg-6 col-6 pt-0 pt-sm-3 pt-lg-2">
-        <div class="enegre-menu d-inline-block">
+    <div class="col-lg-6 col-6 pt-0 pt-sm-0 pt-lg-2">
+        <!-- <div class="enegre-menu d-inline-block">
           <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
           <label for="openSidebarMenu" class="sidebarIconToggle pt-2 me-3">
             <div class="spinner diagonal part-1"></div>
@@ -18,13 +18,32 @@
               <li><a href="" routerLink="/contact" class="fw-lighter">Contact</a></li>
             </ul>
           </div>
+        </div> -->
+
+        
+
+        <div id="sidebar">
+          <div id="toggle" data-aos="fade-right" data-aos-duration="500" class="mt-0 mt-md-3"></div>
+          <ul class="list-unstyled p-0">
+            <li><a href="https://engretech.com/" class="fw-lighter text-decoration-none"><i class="bi bi-house-door"></i> Home</a></li>
+            <li><a routerLink="/about" class="fw-lighter text-decoration-none"><i class="bi bi-people"></i> About Us</a></li>
+            <li><a class="fw-lighter text-decoration-none" routerLink="/industries"><i class="bi bi-building"></i> Industries</a></li>
+            <li><a routerLink="/services" class="fw-lighter text-decoration-none"><i class="bi bi-gear-wide-connected"></i> Services</a></li>
+            <li><a routerLink="/contact" class="fw-lighter text-decoration-none"><i class="bi bi-telephone-forward"></i> Contact</a></li>
+          </ul>
         </div>
-        <img src="./../../../assets/images/engretech-logo.png" class="engretech-logo col-8 col-sm-6 col-md-6 col-lg-3" alt="">
+        <a href="https://engretech.com/">
+          <img src="./../../../assets/images/engretech-logo.png" class="engretech-logo col-8 col-sm-6 col-md-6 col-lg-3 ms-5 ms-md-5" alt="" data-aos="fade-right" data-aos-duration="700">
+        </a>
     </div>
     <div class="col-lg-6 col-6 pt-2 pt-sm-3 text-end px-0 px-sm-3">
         <ul class="list-unstyled d-sm-block">
-            <li class="d-inline-block p-0 p-sm-2 me-1"><a href="#" class="px-1 py-0 px-sm-2  py-sm-1 rounded-pill border bg-white border-secondary text-dark text-decoration-none shadow-sm"><i class="bi bi-briefcase-fill d-none d-sm-inline"></i> CAREERS</a></li>
-            <li class="d-inline-block p-0 p-sm-2"><a href="#" class="px-1 py-0 px-sm-2 py-sm-1 rounded-pill border bg-white border-secondary text-dark text-decoration-none shadow-sm"><i class="bi bi-telephone-fill d-none d-sm-inline"></i> CONTACT</a></li>
+            <li class="d-inline-block p-0 p-sm-2 me-1" data-aos="fade-left" data-aos-duration="1000">
+              <a routerLink="/careers" class="px-1 py-0 px-sm-2  py-sm-1 rounded-pill border bg-white border-secondary text-dark text-decoration-none shadow-sm"><i class="bi bi-briefcase-fill d-none d-sm-inline"></i> CAREERS</a>
+            </li>
+            <li class="d-inline-block p-0 p-sm-2" data-aos="fade-left" data-aos-duration="600">
+              <a routerLink="/contact" class="px-1 py-0 px-sm-2 py-sm-1 rounded-pill border bg-white border-secondary text-dark text-decoration-none shadow-sm"><i class="bi bi-telephone-fill d-none d-sm-inline"></i> CONTACT</a>
+            </li>
         </ul>
     </div>
 </div>

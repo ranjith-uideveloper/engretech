@@ -7,11 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  ontoggle(){
+    const toggle = document.getElementById('toggle');
+    const sidebar = document.getElementById('sidebar');
+    document.onclick = function(e){
+      if((e.target as Element).id !== 'sidebar' && (e.target as Element).id !== 'toggle'){
+        toggle.classList.remove('active');
+        sidebar.classList.remove('active');
+      }
+    }
+    toggle.onclick = function(){
+      toggle.classList.toggle('active');
+      sidebar.classList.toggle('active');
+    }
+  }
   
-
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
+    this.ontoggle();
   }
 
 }

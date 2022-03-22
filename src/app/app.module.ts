@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,6 +12,11 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { IndustriesComponent } from './components/industries/industries.component';
+import { CareersComponent } from './components/careers/careers.component';
+import { OtherServicesComponent } from './components/other-services/other-services.component';
+import { ToolsMethodologiesComponent } from './components/tools-methodologies/tools-methodologies.component';
+import { EngineeringServicesComponent } from './components/engineering-services/engineering-services.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { ContactComponent } from './components/contact/contact.component';
     AboutComponent,
     HomeComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    IndustriesComponent,
+    CareersComponent,
+    OtherServicesComponent,
+    ToolsMethodologiesComponent,
+    EngineeringServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +40,7 @@ import { ContactComponent } from './components/contact/contact.component';
     RouterModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,7 +4,7 @@
 
 
 <div class="banner-section">
-    <div class="banner-video position-absolute top-0">
+    <div class="banner-video position-absolute top-0" data-aos="zoom-in" data-aos-duration="1000">
         <video width="100%" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="mt-5 mt-md-0 pt-3 pt-md-0">
             <source src="../../../assets/videos/banner-video.mp4" type="video/mp4">
         </video>
@@ -12,65 +12,67 @@
         
     
     <div class="banner-text">
-        <h1 class="text-white col-lg-8 text-center font-oswald display-3 mb-5">{{banner_heading}}</h1>
-        <a href="#" class="btn btn-md px-4 rounded-pill btn-light">Learn More <i class="bi bi-caret-right-fill ms-1"></i></a>
+        <h1 class="text-white col-lg-8 text-center font-oswald display-3 mb-5" data-aos="fade-up"
+        data-aos-duration="2000">{{banner_heading}}</h1>
+        <a routerLink="/engineering-services" class="btn btn-md px-4 rounded-pill btn-light" data-aos="fade-down"
+        data-aos-duration="2000">Learn More <i class="bi bi-caret-right-fill ms-1"></i></a>
     </div> 
 
 </div> 
 
+<div class="p-5 col-10 pt-0 mt-5 pb-5 text-center service_blocks bg-light rounded shadow-lg mb-5 m-auto">
+    <h3 class="h2 mt-5 pt-5 mb-2 text-heading" data-aos="zoom-in">Our Services</h3>
+    <h5 class="d-inline-block border-bottom border-2 border-muted pb-1 mb-3" data-aos="zoom-in" data-aos-duration="600">We Provide Best Services for Our Customers</h5>
 
-<div class="p-5 col-10 pt-0 mt-5 pb-5 text-center service_blocks bg-white rounded shadow-lg mb-5 m-auto">
-    <h3 class="h2 mt-5 pt-5 mb-2 text-heading">Our Services</h3>
-    <h5 class="d-inline-block border-bottom border-2 border-muted pb-1 mb-3">We Provide Best Services for Our Customers</h5>
     <div class="row mt-5">
-        <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="service_block px-2 col-lg-10 py-5 bg-light shadow-sm h-100 align-items-center m-auto justify-content-center d-flex position-relative">
-                <i class="bi bi-tools h2 position-absolute"></i>
+        <div class="col-lg-3 mb-5 mb-lg-0" data-aos="zoom-out-up" data-aos-duration="600">
+            <div routerLink="/services" class="cursor-pointer service_block px-2 col-lg-10 py-5 shadow h-100 bg-white">
+                <i class="bi bi-tools h2 mb-3 d-block"></i>
                 <h4 class="h5">Electromechanical Product Design concept to manufacturing.</h4>
             </div>
         </div>
-        <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="service_block px-2 col-lg-10 py-5 bg-light shadow-sm h-100 align-items-center m-auto justify-content-center d-flex position-relative">
-                <i class="bi bi-gear-wide-connected h2 position-absolute"></i>
+        <div class="col-lg-3 mb-5 mb-lg-0" data-aos="zoom-out-down" data-aos-duration="600">
+            <div routerLink="/services" class="cursor-pointer service_block px-2 col-lg-10 py-5 shadow h-100 bg-white">
+                <i class="bi bi-gear-wide-connected h2 mb-3 d-block"></i>
                 <h4 class="h5">Support for Design Changes, Value Engineering and New product development.</h4>
             </div>    
         </div>
-        <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="service_block px-2 col-lg-10 py-5 bg-light shadow-sm h-100 align-items-center m-auto justify-content-center d-flex position-relative">
-                <i class="bi bi-bezier h2 position-absolute"></i>
+        <div class="col-lg-3 mb-5 mb-lg-0" data-aos="zoom-out-up" data-aos-duration="600">
+            <div routerLink="/services" class="cursor-pointer service_block px-2 col-lg-10 py-5 shadow h-100 bg-white">
+                <i class="bi bi-bezier h2 mb-3 d-block"></i>
                 <h4 class="h5">Prototyping and Manufacturing Support.</h4>
             </div>    
         </div>
-        <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="service_block px-2 col-lg-10 py-5 bg-light shadow-sm h-100 align-items-center m-auto justify-content-center d-flex position-relative">
-                <i class="bi bi-list-columns-reverse h2 position-absolute"></i>
+        <div class="col-lg-3 mb-5 mb-lg-0" data-aos="zoom-out-down" data-aos-duration="600">
+            <div routerLink="/services" class="cursor-pointer service_block px-2 col-lg-10 py-5 shadow h-100 bg-white">
+                <i class="bi bi-list-columns-reverse h2 mb-3 d-block"></i>
                 <h4 class="h5">Reverse Engineering & Prototyping.</h4>
             </div>    
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="service_block px-2 col-lg-10 py-5 bg-light shadow-sm h-100 align-items-center m-auto justify-content-center d-flex position-relative">
-                <i class="bi bi-file-earmark-pdf h2 position-absolute"></i>
+        <div class="col-lg-3 mb-5 mb-lg-0" data-aos="zoom-out-up" data-aos-duration="600">
+            <div routerLink="/services" class="cursor-pointer service_block px-2 col-lg-10 py-5 shadow h-100 bg-white">
+                <i class="bi bi-file-earmark-pdf h2 mb-3 d-block"></i>
                 <h4 class="h5">Technical Documentation.</h4>
             </div>    
         </div>
-        <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="service_block px-2 col-lg-10 py-5 bg-light shadow-sm h-100 align-items-center m-auto justify-content-center d-flex position-relative">
-                <i class="bi bi-easel3-fill h2 position-absolute"></i>
+        <div class="col-lg-3 mb-5 mb-lg-0" data-aos="zoom-out-down" data-aos-duration="600">
+            <div routerLink="/services" class="cursor-pointer service_block px-2 col-lg-10 py-5 shadow h-100 bg-white">
+                <i class="bi bi-easel3-fill h2 mb-3 d-block"></i>
                 <h4 class="h5">CAD Modeling & Drafting.</h4>
             </div>    
         </div>
-        <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="service_block px-2 col-lg-10 m-auto d-flex-block py-5 bg-light shadow-sm h-100 align-items-center position-relative">
-                <i class="bi bi-headset h2 position-absolute"></i>
+        <div class="col-lg-3 mb-5 mb-lg-0" data-aos="zoom-out-up" data-aos-duration="600">
+            <div routerLink="/services" class="cursor-pointer service_block px-2 col-lg-10 py-5 shadow h-100 bg-white">
+                <i class="bi bi-headset h2 mb-3 d-block"></i>
                 <h4 class="h5">PLM support.</h4> 
             </div>    
         </div>
         
-        <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="service_block px-2 col-lg-10 m-auto d-flex-block py-5 bg-light shadow-sm h-100 align-items-center position-relative">
-                <i class="bi bi-wrench-adjustable h2 position-absolute"></i>
+        <div class="col-lg-3 mb-5 mb-lg-0" data-aos="zoom-out-down" data-aos-duration="600">
+            <div routerLink="/services" class="cursor-pointer service_block px-2 col-lg-10 py-5 shadow h-100 bg-white">
+                <i class="bi bi-wrench-adjustable h2 mb-3 d-block"></i>
                 <h4 class="h5">Tooling.</h4>
             </div>    
         </div>
@@ -79,12 +81,12 @@
 
 
 <div class="row m-0 py-0">
-    <div class="col-lg-6 px-0 paper-work">
+    <div class="col-lg-6 px-0 paper-work" data-aos="fade-up" data-aos-duration="600">
         <img src="../../../assets/images/paper-work-img.jpg" alt="" class="img-fluid">
     </div>
-    <div class="col-lg-6 bg-paperWork d-flex justify-content-center align-items-center flex-column h-100vh p-5">
-      <h1 class="font-oswald text-white w-75 m-auto text-center h-auto mt-0 mb-4">We provide all the required services to realize your product. Paper sketch or an oral idea, we can build on it.</h1>
-      <a href="#" class="btn btn-light btn-md">Know More <i class="bi bi-hand-index-thumb"></i></a>
+    <div class="col-lg-6 bg-paperWork d-flex justify-content-center align-items-center flex-column h-100vh p-5" data-aos="fade-down" data-aos-duration="600">
+      <h2 class="font-oswald text-white w-75 m-auto text-center h-auto mt-0 mb-4">Engre Tech is successful because we count on our technically competent engineers that bring VALUE THROUGH DESIGN ENGINEERING.</h2>
+      <a routerLink="/other-services" class="btn btn-light btn-md">Know More <i class="bi bi-hand-index-thumb"></i></a>
     </div>
 </div>
 
@@ -92,24 +94,25 @@
 
 
 <div class="row m-0 py-0 mt-5 mt-lg-0">
-    <div class="col-lg-6 engre-points d-flex justify-content-center align-items-center flex-column h-100vh p-5">
-      <ul class="list-unstyled">
-          <li class="h5 text-white fw-lighter mb-4"><i class="bi bi-check-circle h5 mt-1 me-1"></i> Development and Manufacturing Solutions</li>
-          <li class="h5 text-white fw-lighter mb-4"><i class="bi bi-check-circle h5 mt-1 me-1"></i> Need Help with easier</li>
-          <li class="h5 text-white fw-lighter mb-4"><i class="bi bi-check-circle h5 mt-1 me-1"></i> High quality Design</li>
-          <li class="h5 text-white fw-lighter mb-4"><i class="bi bi-check-circle h5 mt-1 me-1"></i> Cost effective</li>
-          <li class="h5 text-white fw-lighter mb-4"><i class="bi bi-check-circle h5 mt-1 me-1"></i> We Are the Experts!</li>
-          <li><a href="#" class="btn btn-md px-4 bg-white rounded-pill text-engre rounded-0 mt-3">View Details <i class="bi bi-arrow-right-square"></i></a></li>
+    <div class="col-lg-6 engre-points d-flex justify-content-center align-items-center flex-column h-100vh p-5" data-aos="fade-up" data-aos-duration="800">
+        <h2 class="font-oswald text-white w-75 m-auto text-left h-auto mt-0 mb-4">TOOLS AND METHODOLOGIES</h2>
+      <ul class="list-unstyled p-0">
+          <li class="h5 text-white fw-lighter mb-4"><i class="bi bi-check-circle h5 mt-1 me-1"></i> CAD TOOLS</li>
+          <li class="h5 text-white fw-lighter mb-4"><i class="bi bi-check-circle h5 mt-1 me-1"></i> PDM SYSTEMS</li>
+          <li class="h5 text-white fw-lighter mb-4"><i class="bi bi-check-circle h5 mt-1 me-1"></i> PRODUCT DEVELOPMENT METHODOLOGIES</li>
+          <li class="h5 text-white fw-lighter mb-4"><i class="bi bi-check-circle h5 mt-1 me-1"></i> ERP SYSTEMS</li>
+          <li><a routerLink="/tools-methodologies" class="btn btn-md px-4 bg-white rounded-pill text-engre rounded-0 mt-3">View Details <i class="bi bi-arrow-right-square"></i></a></li>
       </ul>
     </div>
-    <div class="col-lg-6 px-0">
+    <div class="col-lg-6 px-0" data-aos="fade-down" data-aos-duration="800">
         <img src="../../../assets/images/engre-points-img.jpg" alt="" class="img-fluid">
     </div>
 </div>
 
 
-<div class="m-0 bg-secondary py-5 row px-3">
-    <h1 class="text-center font-oswald text-white">Successfully serving for the past 2 years to clients in Europe and USA.</h1>
+<div class="m-0 bg-white py-5 row px-3">
+    <div class="bi bi-award text-engre text-center display-2 mb-3" data-aos="zoom-in-down" data-aos-duration="500"></div>
+    <h1 class="text-center font-oswald text-engre" data-aos="zoom-in-down" data-aos-duration="1200">Successfully serving for the past 2 years to clients in Europe and USA.</h1>
 </div>
 
 
